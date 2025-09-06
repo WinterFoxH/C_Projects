@@ -201,7 +201,7 @@ int main(void){
     
     initialize_todo_list();
 
-    load_todos_from_file("todos.txt");
+    load_todos_from_file("todos.json");
 
     int choice;
     char temp_description[MAX_DESCRIPTION_LENGHT];
@@ -260,8 +260,8 @@ int main(void){
             break;
         case 5:
             //save todos
-            save_todo_to_file("todos.txt");
-            printf("Todos save to todos.txt.\n");
+            save_todo_to_file("todos.json");
+            printf("Todos save to todos.json\n");
             break;
 
         case 6: //exit
